@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    <section id="container">
+        <section class="scores">
+            <h1>Tic Tac Toe</h1>
+
+            <h3 id="winX">X: 0</h3>
+            <h3 id="winO">O: 0</h3>
+            <h3 id="tie">Tie: 0</h3>
+
+            <h3 class="msg">Let's Play!</h3>
+        </section>
+
+        <section class="game-board">
+            <table>
+                <tr id="row1">
+                    <td id="sq1" onclick="nextMove(this);"></td>
+                    <td id="sq2" onclick="nextMove(this);"></td>
+                    <td id="sq3" onclick="nextMove(this);"></td>
+                </tr>
+                <tr id="row2">
+                    <td id="sq4" onclick="nextMove(this);"></td>
+                    <td id="sq5" onclick="nextMove(this);"></td>
+                    <td id="sq6" onclick="nextMove(this);"></td>
+                </tr>
+                <tr id="row3">
+                    <td id="sq7" onclick="nextMove(this);"></td>
+                    <td id="sq8" onclick="nextMove(this);"></td>
+                    <td id="sq9" onclick="nextMove(this);"></td>
+                </tr>
+            </table>
+
+            <button type="button" value="reset">Reset</button>
+            <button type="button" value="submit">Start</button>
+        </section>
+    </section>
+
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
